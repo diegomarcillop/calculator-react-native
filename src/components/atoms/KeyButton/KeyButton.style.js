@@ -19,7 +19,7 @@ export const style = StyleSheet.create({
     borderRadius: 14,
     elevation: 0.6
   },
-  button__primary__large: {
+  button__primaryLarge: {
     backgroundColor: colors.primary,
     borderRadius: 14,
     width: '44%',
@@ -34,15 +34,17 @@ export const style = StyleSheet.create({
     fontSize: 18,
     color: colors.black._600,
   },
-  button__text_primary__large: {
+  button__text_primaryLarge: {
     fontFamily: fonts.rubikBold,
     fontSize: 24,
     color: 'white',
   },
   button__text_primary: {
+    fontSize: 20,
     color: colors.primary,
   },
   button__text_secondary: {
+    fontSize: 20,
     color: colors.secondary,
   },
 });

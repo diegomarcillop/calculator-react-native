@@ -8,13 +8,13 @@ export const KeyPad = () => {
 
   const numbers = [
     { key: 'AC', type: 'primary' },
-    { key: '%', type: 'primary' },
-    { key: 'X', type: 'primary' },
-    { key: 'XX' },
+    { key: 'pr', type: 'primary', icon: 'percentage' },
+    { key: '*', type: 'primary', icon: 'multiply' },
+    { key: 'clean', type: 'secondary', icon: 'clean' },
     { key: '7' },
     { key: '8' },
     { key: '9' },
-    { key: '%', type: 'secondary' },
+    { key: '/', type: 'secondary' },
     { key: '4' },
     { key: '5' },
     { key: '6' },
@@ -25,12 +25,12 @@ export const KeyPad = () => {
     { key: '-', type: 'secondary' },
     { key: '0' },
     { key: ',' },
-    { key: '=', type: 'primary__large' },
+    { key: '=', type: 'primaryLarge' },
   ];
 
   return (
     <View style={style.container}>
-      {numbers.map((item, index) => <KeyButton key={index} title={item.key} type={item.type} />)}
+      {numbers.map((item, index) => <KeyButton key={index} icon={item.icon} title={item.key} type={item.type} />)}
     </View>
   )
 }

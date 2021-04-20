@@ -6,7 +6,7 @@ const { height } = Dimensions.get("screen");
 
 export const style = StyleSheet.create({
   container: {
-    height: height * 0.65,
+    height: height * 0.64,
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'space-evenly',
