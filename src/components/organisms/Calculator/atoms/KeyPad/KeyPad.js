@@ -9,13 +9,13 @@ export const KeyPad = () => {
 
   const numbers = [
     { key: 'AC', type: 'primary' },
-    { key: '%', type: 'primary' },
+    { key: '%', type: 'primary', icon: 'percentage' },
     { key: '*', type: 'primary', icon: 'times' },
-    { key: 'clean', type: 'danger', icon: 'window-close-o' },
+    { key: 'clean', type: 'danger', icon: 'backspace' },
     { key: '7' },
     { key: '8' },
     { key: '9' },
-    { key: '/', type: 'secondary' },
+    { key: '/', type: 'secondary', icon: 'divide' },
     { key: '4' },
     { key: '5' },
     { key: '6' },
