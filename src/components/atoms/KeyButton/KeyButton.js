@@ -61,7 +61,7 @@ export const KeyButton = ({ title, type = 'default', icon, ...props }) => {
   return (
     <TouchableOpacity style={{ ...style.button, ...types[type]?.button }} {...props} >
       {icon ?
-        <Icon name={icon} style={{... types[type]?.text}}/>
+        <Icon name={icon} style={{...style.button__icon,... types[type]?.text}}/>
         :
         <Text style={{ ...style.button__text, ...types[type]?.text }}>{title}</Text>
       }

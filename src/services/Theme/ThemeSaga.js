@@ -16,7 +16,6 @@ function* setTheme({payload}) {
   yield themeStorage.save(themeValue); 
 }
 
-
 function* actionWatcher() {
   yield takeLatest(theme.getTheme, getTheme); 
   yield takeLatest(theme.setTheme, setTheme); 
