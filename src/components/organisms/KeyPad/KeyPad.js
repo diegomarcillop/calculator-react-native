@@ -16,7 +16,7 @@ export const KeyPad = () => {
       { value: 'AC', button: 'primary', },
       { value: '%', button: 'primary', icon: 'percentage', color: getColors().primary },
       { value: '*', button: 'primary', icon: 'times', color: getColors().primary },
-      { value: 'CLEAN', button: 'primary', icon: 'backspace' },
+      { value: 'CLEAN', button: 'danger', icon: 'backspace' },
     ],
     [
       { value: 7 },
