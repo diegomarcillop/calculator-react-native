@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { View } from 'react-native';
 
 import { Calculator } from '../../../components/organisms/Calculator/Calculator';

@@ -1,17 +1,21 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useDispatch } from 'react-redux';
 
 import { KeyButton } from '../../atoms/KeyButton/KeyButton';
 import { getColors } from '../../../@common/theme/theme';
 import { style } from './KeyPad.style';
+import { calculator } from '../../../services/Calculator/CalculatorActions';
 
-export const KeyPad = ({ hadleOperation }) => {
+export const KeyPad = () => {
+
+  const dispatch = useDispatch();
 
   const keys = [
     [
       { value: 'AC', button: 'primary', },
       { value: '%', button: 'primary', icon: 'percentage', color: getColors().primary },
-      { value: 'x', button: 'primary', icon: 'times', color: getColors().primary },
+      { value: '*', button: 'primary', icon: 'times', color: getColors().primary },
       { value: 'CLEAN', button: 'primary', icon: 'backspace' },
     ],
     [
@@ -38,6 +42,10 @@ export const KeyPad = ({ hadleOperation }) => {
       { value: '=', button: 'primaryLarge' }
     ]
   ];
+
+  const hadleOperation = (value) => {
+    dispatch(calculator.setOperation(value));
+  };
 
   return (
     <View style={{ ...style.container, backgroundColor: getColors().button }}>

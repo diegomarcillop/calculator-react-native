@@ -13,7 +13,7 @@ export const style = StyleSheet.create({
   },
   viewResult__textResult: {
     fontFamily: fonts.rubikBold,
-    fontSize: 40,
+    fontSize: 50,
     alignSelf: 'flex-end'
   },
   viewResult__operation: {
